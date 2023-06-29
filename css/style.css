@@ -8,126 +8,192 @@ ul {
     padding: 0px;
 }
 
-#menu a {
-    color: black;
-    text-decoration: none;
+body {
     font-family: 'Great Vibes';
-    font-size: 1.85em;
-    text-transform: initial;
-    transition: 0.3s;
+}
+.container-grid {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-#menu a:hover {
-    color: rgba(65, 63, 63, 0.664);
-    font-size: 1.95em;
-    transition: 0.3s;
-    text-shadow: 4px 4px 6px #0000007a;
+header {
+    z-index: 1;
+    background-color: #d6c99e;
+    height: 80px;
+    position: fixed;
+    width: 100vw;
 }
-
-#logo img:hover {
-    box-shadow: 4px 4px 6px #0000007a;
-    transition: 0.3s;
-}
-
-#logo img {
-    float: left;
-    height: 55px;
-    position: relative;
-    top: 0px;
-    left: 0px;
-}
-
-#header {
-    width: 100%;
-    position: relative;
-    z-index: 90;
-    box-sizing: border-box;
-    height: 75px;
-    padding: 1rem;
+.conteudo-header {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    background: rgba(250, 212, 106, 0.952);
-    box-shadow: 4px 4px 6px #0000007a;
+    height: 100%;
+    align-items: center;
 }
-
-#header figcaption {
-    font-family: 'Amatic SC';
-    -webkit-text-stroke: 1px black;
-    color: #d6c99e;
-    font-size: 35px;
+.logo {
+    height: 80px;
 }
-
-#menu {
+.menu-header {
+    width: 50%;
     display: flex;
-    list-style: none;
-    gap: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-header a {
+    color: #13185a;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.35em;
+    transition: 0.3s;
+}
+.menu-header a:hover:not(.botao) {
+    font-size: 1.6em;
+    transition: 0.3s;
+    text-shadow: 4px 4px 6px #d6c99e ;
 }
 
-@media (max-width: 600px) {
-    #menu {
-        display: block;
-        position: absolute;
-        width: 15em;
-        top: 70px;
-        right: 0px;
-        background: #d6c99e;
-        transition: 0.6s;
-        z-index: 1000;
-        height: 0px;
-        padding-left: 5px;
-        visibility: hidden;
-        overflow-y: hidden;
-    }
-
-    #menu li {
-        padding-top: 30px;
-        padding-bottom: 0px;
-        margin: 0 1rem;
-        border-bottom: 2px solid rgba(0, 0, 0, 0.05);
-    }
-
-    #nav.active #menu {
-        height: calc(100vh - 70px);
-        visibility: visible;
-        overflow: hidden;
-    }
-
-    #hamburger {
-        border-top: 2px solid;
-        /* Melhorando hamburger >>> Espessura da Linha */
-        width: 30px;
-        /* Alterando a Largura do hamberger */
-        color: rgb(0, 0, 0);
-        /* Alterando a Cor do hamburer */
-    }
-
-    #hamburger::after,
-    #hamburger::before {
-        content: '';
-        display: block;
-        width: 30px;
-        /* Alterando a Largura do hamburger */
-        height: 2px;
-        background: currentColor;
-        margin-top: 4px;
-        /* Altera o Espaçamento Entre o hamburger */
-        position: relative;
-        border-top: 2px solid;
-        /* Melhorando Hamburger >>> Espessura da Linha */
-    }
-
-    #nav.active #hamburger {
-        border-top-color: transparent;
-    }
-
-    #nav.active #hamburger::before {
-        transform: rotate(135deg);
-    }
-
-    #nav.active #hamburger::after {
-        transform: rotate(-135deg);
-        top: -7px;
-    }
-
+/* .banner {
+    background-image: url(./img/home1.jpg);
+    height: 768px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
+.conteudo-banner {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+}
+.texto-banner {
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    justify-content: space-around;
+}
+h1 {
+    color: white;
+    font-size: 80px;
+}
+.linha-amarela {
+    border: solid 1px #FFAF00;
+}
+.titulo-senai {
+    font-family: 'Courier New', Courier, monospace;
+    color: #F9003D;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 600;
+} */
+
+
+/* Início CSS Contato */
+
+.contato {
+    margin-top: 50px;
+}
+
+.form_main {
+    width: 100%;
+}
+
+.form_main h4 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 18px;
+    margin-bottom: 15px;
+    text-transform: initial;
+}
+
+.text-left {
+    border-bottom: 1px solid #7e7e7e;
+    padding-bottom: 9px;
+    position: relative;
+}
+
+.text-local {
+    border-bottom: 1px solid #7e7e7e;
+    margin-top: 9px;
+    position: relative;
+}
+
+.text-left span {
+    background: #111e8d none repeat scroll 0 0;
+    bottom: -2px;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 0px;
+}
+
+.form-horizontal {
+    border-radius: 107px;
+    padding: 6px;
+}
+
+.form-control[type="text"] {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 10px 0 10px 5px;
+    width: 100%;
+}
+
+.form-control[type="email"] {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 10px 0 10px 5px;
+    width: 100%;
+}
+
+.form-control-msg[type="text"] {
+    margin: 10px 0 0;
+    padding: 10px 0 10px 5px;
+    width: 100%;
+}
+
+.formbutton[type="submit"] {
+    -moz-box-shadow: inset 0px 1px 0px 0px #87c0e6;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #87c0e6;
+    box-shadow: inset 0px 1px 0px 0px #87c0e6;
+    background-color: #297ee6;
+    display: inline-block;
+    border: 1px solid #2489d6;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 35px;
+    margin: 10px 0;
+    padding: 0;
+    text-transform: initial;
+    width: 30%;
+}
+
+.formbutton:hover {
+    background-color: #31a1de;
+}
+
+.formbutton:active {
+    position: relative;
+    top: 1px;
+}
+
+.txt2:hover {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    color: #5793ef;
+    transition: all 0.5s ease 0s;
+}
+
+/* Fim CSS Contato */
+/* Início CSS Mapa */
+.map {
+    width: 100%;
+    height: 300px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* Fim CSS Mapa */
