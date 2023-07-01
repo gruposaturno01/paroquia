@@ -314,3 +314,14 @@ h1 {
 
 /* Fim CSS Footer */
 
+/* Início Whatsapp */
+.whatsapp {
+    position: fixed;
+    z-index: 2;
+    top: 200px;
+    right: 20px;
+}
+.whatsapp img {
+    height: 60px;
+}
+
