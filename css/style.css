@@ -53,9 +53,9 @@ header {
     text-shadow: 4px 4px 6px #0000007a ;
 }
 
-/* .banner {
-    background-image: url(./img/home1.jpg);
-    height: 768px;
+ .banner {
+    background-image: url(../img/caroussel5.jpg);
+    height: 758px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -70,21 +70,23 @@ header {
     flex-direction: column;
     height: 60%;
     justify-content: space-around;
+    font-family: 'Great Vibes'
 }
 h1 {
     color: white;
     font-size: 80px;
 }
 .linha-amarela {
-    border: solid 1px #FFAF00;
+    border: solid 1px #000000;
 }
 .titulo-senai {
     font-family: 'Courier New', Courier, monospace;
-    color: #F9003D;
+    color: #ffffff;
     font-size: 50px;
-    text-transform: uppercase;
+    text-transform: initial;
     font-weight: 600;
-} */
+    font-family: 'Great Vibes'
+} 
 
 
 /* Início CSS Contato */
