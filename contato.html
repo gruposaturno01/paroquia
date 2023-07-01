@@ -6,26 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/10ccc94877.js" crossorigin="anonymous"></script>
     <title>𝕊𝕒𝕔𝕣𝕒𝕞𝕖𝕟𝕥𝕦𝕞 𝔸𝕞𝕠𝕣𝕚𝕤</title>
 </head>
 <body>
-    <!-- Início Menu Responsivo -->
-    <header id="header">
-        <a id="logo" href="index.html"><img src="./Img/brasão.png" alt="logo paroquia"></a>
-        <figcaption></figcaption>
-        <nav id="nav">
-                 <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
-                    <span id="hamburger"></span>
-                </button> 
-                <ul id="menu" role="menu">
-                    <li><a class="linkMenu" href="index.html">Home</a></li>
-                    <li><a class="linkMenu" href="eventos.html">Eventos</a></li>
-                    <li><a class="linkMenu" href="contato.html">Suporte</a></li>
-                </ul>
+    <!-- Início Menu -->
+<!-- Início Menu -->
+<header>
+    <div class="container-grid conteudo-header">
+        <img class="logo" src="./img/brasão.png" alt="Logo">
+        <nav id="menu-header" class="menu-header">
+            <a href="index.html" title="Início da Página" class="fa-solid fa-house" style="color:  #13185a;"></a>
+            <a href="eventos.html">Eventos</a>
+            <a href="contato.html">Suporte</a>
+            <a class="botao" href="mailto:saturnogrupo4@email.com">Contate-nos</a>
         </nav>
-    </header>
-    <!-- Fim Menu Responsivo -->
+        <!-- <a class="menu-barras" href="javascript: void(0)" onclick="mostrarMenu()"> -->
+            <i id="icone-menu" class="fas fa-bars" style="color:#d6c99e"></i>
+        </a>
+    </div>
+</header>
+    <!-- Fim Menu -->
      <!--inicio form contato  -->
      <div class="contato">
         <div class="container">
@@ -106,50 +108,55 @@
         </div>
      </div>
      <!-- fim whatsApp -->
-    <!-- Início Footer -->
-    <footer class="rodape">
-        <div class="container">
-            <div class="row m-0">
-                <!-- Início Logo -->
-                <div class="col-md-4">
-                    <figure>
-                        <img id="img-logo" src="./img/brasão.png" alt="logo_rodape">
-                    </figure>
-                </div>
-                <!-- Fim logo -->
-                <!-- Início texto rodape -->
-                <div class="col-md-4">
-                    <div class="info-contato">
-                        <p>E-mail:</p>
-                        <p>saturnogrupo4@gmail.com</p><br>
-                        <p>Endereço:</p>
-                        <p>Praça Nossa Sra. do Brasil, 01 - Jardim America, São Paulo-SP, 01438-060</p><br>
-                        <p>Telefone:</p>
-                        <p>+55 (15) 4002-8922</p>
-                    </div>
-                </div>
-                <!-- Fim texto rodape -->
-                <!-- Início das mídias sociais -->
-                <div class="col-md-4">
-                    <figure class="redes-sociais">
-                        <a href="https://www.facebook.com/profile.php?id=100093838734772"><img src="./Img/face.png" alt=""></a>
-                        <a href="https://www.instagram.com/paroquia.nossasenhora/"><img src="./img/insta.png" alt=""></a>
-                    </figure>
-                    <br>
-                    <a href="index.html">Home</a>
-                    <a href="produtos.html">Produtos</a>
-                    <a href="contato.html">Suporte</a>
-                </div>
-                <!-- Fim das mídias sociais -->
-                <!-- Início dos Direitos Autorais -->
-                <div class="col-12">
-                    <p class="direitos">Direitos Autorais Reservado.</p>
-                </div>
-                <!-- Fim dos Direitos Autorais -->
+   <!-- Início Footer -->
+   <footer class="rodape">
+    <div class="container">
+        <div class="row m-0">
+            <!-- Início Logo -->
+            <div class="col-md-4">
+                <figure>
+                    <img id="img-logo" src="./img/brasão.png" alt="logo_rodape">
+                </figure>
             </div>
+            <!-- Fim Logo -->
+
+             <!-- Início Texto Rodape -->
+            <div class="col-md-4">
+                <div class="info-contato">
+                    <p>E-mail:</p>
+                    <p>saturnogrupo4@hotmail.com</p>
+                    <p>Endereço:</p>
+                    <p>Praça Nossa Sra. do Brasil, 01 - Jardim America, SP</p>
+                    <p>Telefone:</p>
+                    <p>+55 (15) 4002-8922</p>
+                </div>
+            </div>
+            <!-- Fim Texto Rodape -->
+            <!-- Início Mídias Sociais -->
+            <div class="col-md-4">
+                <figure class="redes-sociais">
+                    <a href="#"><img src="./img/redes_sociais/face.png" alt=""></a>
+                    <a href="#"><img src="./img/redes_sociais/insta.png" alt=""></a>
+                    <a href="#"><img src="./img/redes_sociais/youtube.png" alt=""></a>
+                    <a href="#"><img src="./img/redes_sociais/spotify-removebg.png" alt=""></a>
+
+                </figure>
+                <br>
+                <a href="index.html">Home</a>
+                <a href="eventos.html">Produtos</a>
+                <a href="contato.html">Suporte</a>
+            </div>
+            <!-- Fim Mídias Sociais -->
+            <!-- Início dos Direitos Autorais -->
+            <div class="col-12">
+                <p class="direitos">Direitos Autorais Reservado.</p>
+            </div>
+            <!-- Fim os Direitos Autorais -->
         </div>
-    </footer>
-    <!-- Fim Footer -->
+    </div>
+</footer>
+<!-- Fim Footer -->
+
     
 
 </body>
