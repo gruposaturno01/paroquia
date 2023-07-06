@@ -21,7 +21,8 @@ header {
     z-index: 1;
     background-color: #d6c99e;
     height: 80px;
-    position: fixed;
+    position: relative;
+    display: flex;
     width: 100vw;
 }
 .conteudo-header {
@@ -40,6 +41,7 @@ header {
     align-items: center;
 }
 .menu-header a {
+    font-weight: bold;
     color: #13185a;
     text-transform: initial;
     font-size: 1.6em;
@@ -47,6 +49,19 @@ header {
     align-items: center;
     justify-content: space-around;
     font-family: 'Great Vibes';
+    text-decoration: none;
+}
+.menu-header a:hover {
+    font-weight: bold;
+    color: #0a0c29;
+    text-transform: initial;
+    font-size: 1.6em;
+    transition: 0.3s;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Great Vibes';
+    text-decoration: none;
+
 }
 .botao {
     font-weight: bold;
@@ -58,6 +73,7 @@ header {
     font-size: 1.5em !important;
     border: solid 1px #080324;
     border-radius: 30px 10px;
+    text-decoration: none;
 }
 .botao:hover {
     font-size: 1.6em !important;
@@ -69,11 +85,22 @@ header {
 }
 
  .banner {
-    background-image: url(../img/caroussel5.jpg);
-    height: 758px;
+    /* background-image: url(../img/caroussel5.jpg); */
+    height: 100%;
+    width: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: none;
+    display: flex;
+    position: relative; 
+    z-index: 2;
+    
+}
+.banner img {
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
 }
 .conteudo-banner {
     display: flex;
@@ -118,6 +145,8 @@ h1 {
 /* Início CSS Eventos Galeria */
 .galeria {
     margin: 60px auto 20px;
+    display: flex;
+    position: relative;
     
 }
 .galeria .container {
@@ -159,7 +188,7 @@ h1 {
 /* Início CSS Footer */
 .rodape {
     padding: 50px 50px 0;
-    font-family: 'Raleway';
+    font-family: 'Great Vibes';
     background-color: #d6c99e;
 }
 
@@ -178,27 +207,27 @@ h1 {
 
 .rodape .info-contato p {
     margin: 0;
-    font-family: 'Raleway';
+    font-family: 'Great Vibes';
     margin-top: 10px;
 }
 
 .rodape a {
     text-decoration: none;
     color: #000;
-    font-size: 13px;
-    font-family: 'Raleway';
+    font-size: 20px;
+    font-family: 'Great Vibes';
     margin-top: 10px;
 }
 
 .rodape a:hover {
     font-weight: bold;
-    font-family: 'Raleway';
+    font-family: 'Great Vibes';
     margin-top: 10px;
 }
 
 .rodape .redes-sociais {
     display: inline-block;
-    font-family: 'Raleway';
+    font-family: '';
 }
 
 .rodape .redes-sociais img {
@@ -220,7 +249,7 @@ h1 {
 .rodape p.direitos {
     text-align: center;
     margin-top: 40px;
-    font-family: 'Raleway';
+    font-family: 'Great Vibes';
 }
 
 /* Fim CSS Footer */
@@ -235,4 +264,50 @@ h1 {
 .whatsapp img {
     height: 60px;
 }
+/* Início css Straming */
+
+.embed-container {
+    position: relative;
+    padding-bottom: 0;
+    height: auto;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding-top: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+}
+
+.embed-container h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Great Vibes';
+
+}
+.embed-container iframe {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    border-radius: 1em;
+    box-shadow: gray 0.5em 0.5em 0.3em;
+    transition: .3s;
+    display: flex;
+}
+.embed-container iframe:hover {
+    flex: 1;
+    z-index: 1;
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.446);       
+}
+.embed-container .col-lg-4 {
+    margin-top: 15px;
+}
+.embed-container .col-lg-6 {
+    margin-top: 15px;
+}
+
+/* Fim CSS Streaming*/
 
