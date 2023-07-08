@@ -39,6 +39,14 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 0px 20px;
+    display: flex;
+    position: relative;
+}
+.igreja {
+    margin-right: 20px;
+    display: flex;
+    position: relative;
 }
 .menu-header a {
     font-weight: bold;
@@ -103,7 +111,14 @@ header {
     align-items: center;
 }
 
-#texto-banner h1 {}
+#texto-banner h1 {
+    font-family: 'Great Vibes';
+    font-size: 30px;
+}
+#titulo-projeto {
+    font-family: 'Great Vibes';
+    font-size: 20px;
+}
 
 .conteudo-banner {
     display: flex;
@@ -117,10 +132,7 @@ header {
     justify-content: space-around;
     font-family: 'Great Vibes'
 }
-h1 {
-    color: white;
-    font-size: 80px;
-}
+
 .agenda {
     border: solid 1px #000000;
 }
@@ -154,7 +166,7 @@ h1 {
     
 }
 .galeria #container {
-    margin-left: 11%;
+    margin-left: 0%;
 }
 
 .galeria h2 {
