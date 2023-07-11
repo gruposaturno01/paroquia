@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Raleway);
 @import url(https://fonts.googleapis.com/css2?family=Amatic+SC);
 @import url(https://fonts.googleapis.com/css2?family=Great+Vibes);
+@import url(https://fonts.googleapis.com/css2?family=Great+Lora);
 
 body,
 ul {
@@ -84,27 +85,12 @@ header {
     box-shadow: 4px 4px 6px #0000007a;
 }
 
- .banner {
-    /* background-image: url(../img/caroussel5.jpg); */
-    height: 100%;
-    width: 100%;
+.banner {
+    background-image: url(../img/carousel100.png);
+    height: auto;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: none;
-    display: flex;
-    position: relative; 
-    z-index: 25;
-    
 }
-#fundo-banner img {
-    z-index: 0;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-}
-
-#texto-banner h1 {}
-
 .conteudo-banner {
     display: flex;
     align-items: flex-end;
@@ -115,18 +101,25 @@ header {
     flex-direction: column;
     height: 60%;
     justify-content: space-around;
-    font-family: 'Great Vibes'
+    font-family: 'Great Vibes';
 }
 h1 {
-    color: white;
+    color: #13185a;
     font-size: 80px;
+    font-family: 'Great Vibes';
 }
-.agenda {
-    border: solid 1px #000000;
+.linha-amarela {
+    border: solid 1px #13185a;
+}
+.titulo-senai {
+    font-family: 'Great Vibes';
+    color: #13185a;
+    font-size: 50px;
+    text-transform: initial;
+    font-weight: 600;
 }
 .titulo-projeto {
-    font-family: 'Great Vibes';
-    color: #ffffff;
+    color: #13185a;
     font-size: 50px;
     text-transform: initial;
     font-weight: 600;
@@ -352,9 +345,10 @@ h1 {
     font-weight: 600;
 }
 .conteudo-sobre h3 {
-    color: #FFAF00;
+    color: #13185a;
     font-size: 45px;
     font-weight: 500;
+    font-family: 'Great Vibes';
 }
 
 .texto-sobre p {
@@ -363,3 +357,41 @@ h1 {
     text-align: justify;
 }
 /* SOBRE FINAL */
+
+/* Início CSS Card Produtos */
+
+.text-center .mb-5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-center h4 {
+    margin-top: 20px;
+    font-family: 'Great Vibes';
+    text-align: center;
+}
+.card  {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    font-family: 'Great Vibes';
+    text-align: center;
+}
+
+.card img {
+    position: center;
+    padding-bottom: 0;
+    height: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+   /* position: center;
+    height: auto;
+    width: 100%; */
+}
+
+
+/* Fim CSS Card Produtos */
