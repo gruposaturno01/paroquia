@@ -63,7 +63,7 @@ header {
 }
 .menu-header a:hover {
     font-weight: bold;
-    color: #0a0c29;
+    color: #080324a4;
     text-transform: initial;
     font-size: 1.6em;
     transition: 0.3s;
@@ -95,7 +95,7 @@ header {
 }
 
 .banner {
-    background-image: url(../img/carousel.png);
+    background-image: url(../img/zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk.jpg);
     height: 720px;
     background-repeat: no-repeat;
     background-position: center;
@@ -111,6 +111,7 @@ header {
     height: 60%;
     justify-content: space-around;
     font-family: 'Great Vibes';
+    box-shadow: #0000007a;
 }
 h1 {
     color: #13185a;
@@ -126,6 +127,7 @@ h1 {
     font-size: 50px;
     text-transform: initial;
     font-weight: 600;
+    box-shadow: #0000007a;
 }
 .titulo-projeto {
     color: #13185a;
@@ -193,7 +195,9 @@ h1 {
 .rodape {
     padding: 50px 50px 0;
     font-family: 'Great Vibes';
-    background-color: #d6c99e;    
+    background-color: #d6c99e;  
+    display: flex;  
+    justify-content: baseline;
 }
 
 .rodape .container #img-logo {
@@ -363,6 +367,7 @@ h1 {
     color: #FFFFFF;
     font-family: 'Great Vibes';
     text-align: justify;
+    font-size: 22px;
 }
 /* SOBRE FINAL */
 
@@ -437,3 +442,27 @@ h1 {
 
 
 /* Fim CSS Card Produtos */
+
+.info {
+    background-image: url(../Img/fotofundohome1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+} 
+
+.card-info {
+    font-family: 'Great Vibes';
+    text-transform: initial;
+}
+ .card-info h3 {
+    color: #ddd3be;
+    font-size: 50px;
+    padding-left: 900px;
+    padding-right: 500px;
+} 
+.card-info p {
+    font-size: 22px;
+    color: #f7ecd5;
+    padding-left: 500px;
+    padding-right: 500px;
+} 
