@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Raleway);
 @import url(https://fonts.googleapis.com/css2?family=Amatic+SC);
 @import url(https://fonts.googleapis.com/css2?family=Great+Vibes);
+@import url(https://fonts.googleapis.com/css2?family=Parisienne);
 @import url(https://fonts.googleapis.com/css2?family=Great+Lora);
 
 body,
@@ -11,7 +12,7 @@ ul {
 }
 
 body {
-    font-family: 'Great Vibes';
+    font-family: 'Parisienne';
 }
 .container-grid {
     width: 85%;
@@ -21,7 +22,7 @@ body {
 
 header {
     z-index: 1;
-    background-color: #d6c99e;
+    background-color: #d6cba5;
     height: 80px;
     position: relative;
     display: flex;
@@ -58,7 +59,7 @@ header {
     transition: 0.3s;
     align-items: center;
     justify-content: space-around;
-    font-family: 'Great Vibes';
+    font-family: 'Parisienne';
     text-decoration: none;
 }
 .menu-header a:hover {
@@ -69,7 +70,7 @@ header {
     transition: 0.3s;
     align-items: center;
     justify-content: space-around;
-    font-family: 'Great Vibes';
+    font-family: 'Parisienne';
     text-decoration: none;
 
 }
@@ -91,7 +92,7 @@ header {
     line-height: 50px;
     width: 160px;
     transition: 0.3s;
-    box-shadow: 4px 4px 6px #0000007a;
+    box-shadow: 4px 4px 6px #928d8d4d;
 }
 
 .banner {
@@ -101,36 +102,36 @@ header {
     background-position: center;
 }
 .conteudo-banner {
-    display: flex;
-    align-items: flex-end;
     height: 100%;
 }
 .texto-banner {
-    display: flex;
-    flex-direction: column;
-    height: 60%;
-    justify-content: space-around;
-    font-family: 'Great Vibes';
-    box-shadow: #0000007a;
+    height: 70%;
+    font-family: 'Parisienne';
+   
+    padding-top: 250px;
+    align-items: center;
 }
-h1 {
-    color: #13185a;
-    font-size: 80px;
-    font-family: 'Great Vibes';
+.texto-banner h1 {
+    color: #363769;
+    font-size: 60px;
+    font-weight: 600;
+    font-family: 'Parisienne';
+    padding-left: 200px;
 }
 .linha-amarela {
-    border: solid 1px #13185a;
+    padding-top: 50px;
+    border-radius: 5px;
 }
-.titulo-senai {
-    font-family: 'Great Vibes';
-    color: #13185a;
+/* .titulo-senai {
+    font-family: 'Parisienne';
+    color: #d6c99e;
     font-size: 50px;
     text-transform: initial;
     font-weight: 600;
     box-shadow: #0000007a;
-}
+} */
 .titulo-projeto {
-    color: #13185a;
+    color: #d6c99e;
     font-size: 50px;
     text-transform: initial;
     font-weight: 600;
@@ -153,7 +154,7 @@ h1 {
     margin: 0px auto 0px;
     position: center;
     display: flex; 
-    background-color: #e2d5ba;  
+    background-color: #dfd4b3;  
 }
 .galeria #container {
     margin-left: 0%;
@@ -162,7 +163,7 @@ h1 {
 .galeria h2 {
     text-align: center;
     font-size: 50px;
-    font-family: 'Great Vibes';
+    font-family: 'Parisienne';
     margin: 10px 10px;
     color: #13185a;
 }
@@ -194,8 +195,8 @@ h1 {
 /* Início CSS Footer */
 .rodape {
     padding: 50px 50px 0;
-    font-family: 'Great Vibes';
-    background-color: #d6c99e;  
+    font-family: 'Parisienne';
+    background-color: #d6cba5;  
     display: flex;  
     justify-content: baseline;
 }
@@ -215,21 +216,21 @@ h1 {
 
 .rodape .info-contato p {
     margin: 0;
-    font-family: 'Great Vibes';
+    font-family: 'Parisienne';
     margin-top: 10px;
 }
 
 .rodape a {
-    text-decoration: none;
     color: #000;
     font-size: 20px;
-    font-family: 'Great Vibes';
+    font-family: 'Parisienne';
     margin-top: 10px;
+    font-weight: 600;
 }
 
 .rodape a:hover {
     font-weight: bold;
-    font-family: 'Great Vibes';
+    font-family: 'Parisienne';
     margin-top: 10px;
 }
 
@@ -252,12 +253,17 @@ h1 {
     z-index: 1;
     transform: scale(1.5);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.446);
+    text-decoration: none;
 }
 
 .rodape p.direitos {
     text-align: center;
     margin-top: 40px;
-    font-family: 'Great Vibes';
+    font-family: 'Parisienne';
+}
+.rodape .col-md-4 {
+    font-size: 18px;
+    font-weight: 200;
 }
 
 /* Fim CSS Footer */
@@ -284,20 +290,21 @@ h1 {
     padding-left: 30px;
     padding-right: 30px;
     display: flex;
-    background-color: #e2d5ba;
+    background-color:#dfd4b3;
+    padding-bottom: 50px;
 }
 
 .embed-container h2 {
     text-align: center;
     font-size: 50px;
     font-weight: bold;
-    font-family: 'Great Vibes';
+    font-family: 'Parisienne';
     color: #13185a;   
 
 }
 .embed-container .row{
     margin-bottom: 20px;
-    background-color: #e2d5ba;
+    background-color: #dfd4b3;
     display: flex;
 }
 .embed-container iframe {
@@ -333,7 +340,7 @@ h1 {
     padding-bottom: 40px;
 }
 .sobre-projetos h2 {
-    color: #F9003D;
+    color: #13185a;
     font-size: 50px;
     font-weight: 500;
     margin-bottom: 40px;
@@ -351,7 +358,7 @@ h1 {
 }
 .texto-participantes {
     color: white;
-    font-family: 'Great Vibes';
+    font-family: 'Parisienne';
     text-transform: initial;
     font-size: 25px;
     font-weight: 600;
@@ -360,12 +367,12 @@ h1 {
     color: #13185a;
     font-size: 45px;
     font-weight: 500;
-    font-family: 'Great Vibes';
+    font-family: 'Parisienne';
 }
 
 .texto-sobre p {
     color: #FFFFFF;
-    font-family: 'Great Vibes';
+    font-family: 'Parisienne';
     text-align: justify;
     font-size: 22px;
 }
@@ -374,7 +381,7 @@ h1 {
 /* Início CSS Card Produtos */
 
 .text-center {
-    background-color: #e2d5ba;
+    background-color: #dfd4b3;
 }
 
 .text-center .mb-5 {
@@ -401,7 +408,7 @@ h1 {
     text-shadow: 2px 2px 4px #0000007a;
 }
 .text-center h4 {
-    font-family: 'Great Vibes';
+    font-family: 'Parisienne';
     text-align: center;
     font-weight: 100px;    
 
@@ -417,10 +424,10 @@ h1 {
     width: 100%;
     height: 100%;
     align-items: center;
-    font-family: 'Great Vibes';
+    font-family: 'Parisienne';
     text-align: center;
     margin-bottom: 50px;
-    background-color: #e2d5ba; 
+    background-color: #dfd4b3; 
 }
 
 .card img {
@@ -433,7 +440,7 @@ h1 {
     padding-left: 30px;
     padding-right: 30px;
     display: flex;
-    background-color: #e2d5ba;
+    background-color: #dfd4b3;
     padding-bottom: 5px;
    /* position: center;
     height: auto;
@@ -451,7 +458,7 @@ h1 {
 } 
 
 .card-info {
-    font-family: 'Great Vibes';
+    font-family: 'Parisienne';
     text-transform: initial;
 }
  .card-info h3 {
@@ -461,8 +468,50 @@ h1 {
     padding-right: 500px;
 } 
 .card-info p {
-    font-size: 22px;
+    font-size: 25px;
     color: #f7ecd5;
     padding-left: 500px;
     padding-right: 500px;
 } 
+/* Formulário */
+.col-lg-3 button {
+    color: #fff;
+    background-color: #13185a;
+    border-color: #13185a;
+    font-size: 17px;
+}
+.col-lg-3 button:hover {
+    color: #fff;
+    background-color: #20289b;
+    border-color: #20289b;
+}
+.col-lg-3 .form-control {
+    font-size: 17px;
+}
+
+.search-sec{
+    padding: 2rem;
+}
+.search-slt{
+    display: block;
+    width: 100%;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: #55595c;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius:0;
+}
+.wrn-btn{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    border-radius:0;
+}
+@media (min-width: 992px){
+    .search-sec{
+        position: relative;
+    }
+}
